@@ -6,7 +6,7 @@ source = "git::ssh://git@github.com/abhinav-tripathi14/terraform-aws-nullresourc
 resource "null_resource" "test"{
 provisioner "local-exec" {
     command = "./scripts/test.sh"
-    working_dir = "${path.root}
+    working_dir = "${path.root}"
   }
 }
 resource "null_resource" "test-not-path"{
