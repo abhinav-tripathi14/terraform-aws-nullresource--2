@@ -14,7 +14,7 @@ provisioner "local-exec" {
     command = "aws --version"
   }
 }
-resource "null_resource" "path-local-exec"{
+resource "null_resource" "path-local-exec-1"{
 provisioner "local-exec" {
     command = "pwd"
   }
