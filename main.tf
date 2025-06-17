@@ -11,6 +11,11 @@ provisioner "local-exec" {
 }
 resource "null_resource" "test-not-path"{
 provisioner "local-exec" {
+    command = "aws --version"
+  }
+}
+resource "null_resource" "path-local-exec"{
+provisioner "local-exec" {
     command = "pwd"
   }
 }
